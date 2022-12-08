@@ -8,7 +8,7 @@ class ClientTest(unittest.TestCase):
         client = NefitClient(
             os.environ.get("NEFIT_SERIAL", 123456789),
             os.environ.get("NEFIT_ACCESS_KEY", "abc1abc2abc3abc4"),
-            "asddasadsasdcx"
+            "asddasadsasdcx",
         )
         client.connect()
         with self.assertRaises(NefitResponseException):
@@ -17,5 +17,5 @@ class ClientTest(unittest.TestCase):
         client.force_disconnect()
 
 
-if __name__ == '__main__':
+if __name__ == "__main__":
     unittest.main()

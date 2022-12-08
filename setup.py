@@ -18,7 +18,7 @@ setup(
     url='https://github.com/patvdleer/nefit-client-python.git',
     download_url='https://github.com/patvdleer/nefit-client-python/archive/v%s.tar.gz' % version,
     packages=["nefit"],
-    install_requires=['pyaes', 'sleekxmpp'],
+    install_requires=['pyaes', 'slixmpp'],
     license='MIT',
     entry_points={
         'console_scripts': [
